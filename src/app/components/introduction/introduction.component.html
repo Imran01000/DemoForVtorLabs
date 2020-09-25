@@ -1,0 +1,41 @@
+<div class="main">
+    <div class="toolbar" fxLayout="row" fxLayoutAlign="space-around center">
+        <mat-toolbar>
+            <span style="padding-left: 1cm;">IS</span>
+            <div class="buttons" fxLayout="row" fxLayoutAlign="space-around center">
+                <button mat-icon-button>
+                    <mat-icon matTooltip="Home">home</mat-icon>
+                </button>
+                <button mat-icon-button style="margin-left: 1cm;">
+                    <mat-icon matTooltip="About"> person </mat-icon>
+                </button>
+                <button mat-icon-button style="margin-left: 1cm;">
+                    <mat-icon matTooltip="Skills&Experience"> calendar_today </mat-icon>
+                </button>
+                <button mat-icon-button style="margin-left: 1cm;" routerLink="/resume">
+                    <mat-icon matTooltip="Resume"> list_alt </mat-icon>
+                </button>
+                <button mat-icon-button style="margin-left: 1cm;">
+                    <mat-icon matTooltip="My work"> card_travel </mat-icon>
+                </button>
+            </div>
+            <div class="socail-buttons" fxLayout="row" fxLayoutAlign="space-around center">
+                <button mat-stroked-button onClick="window.open('//instagram.com')">
+                    Instagram
+                </button>
+                <button mat-stroked-button style="margin-left: 0.4cm;" onClick="window.open('https://www.linkedin.com/in/imran-shaikh-747641140/')">
+                    LinkedIn
+                </button>
+                <button mat-stroked-button style="margin-left: 0.4cm;" onClick="window.open('https://github.com/Imran01000/')">
+                    Github
+                </button>
+                <button mat-stroked-button style="margin-left: 0.4cm;" onClick="window.open('//twitter.com')">
+                    Twitter
+                </button>
+            </div>
+        </mat-toolbar>
+        <div class="json-data">
+            {{introductionData}}
+        </div>
+    </div>
+</div>
